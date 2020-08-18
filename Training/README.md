@@ -22,4 +22,6 @@ python train.py checkpoint_dir=path/to/checkpoint_dir dataset=../...
 pip3 install requirements.txt
 ```
 
-
+## References
+1. [VQ-VAE] https://github.com/bshall/VectorQuantizedCPC
+2. [Speaker Trainer] https://github.com/clovaai/voxceleb_trainer
