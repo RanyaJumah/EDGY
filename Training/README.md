@@ -24,7 +24,7 @@ python VQ-VAE/train_VQ.py checkpoint_dir=[?] dataset=[LibriSpeech]
 
 * Train Speaker model
 ```
-python speaker/train_speaker.py checkpoint_dir=[?] 
+python Speaker/train_speaker.py checkpoint_dir=[?] 
 ```
 
 ## References
