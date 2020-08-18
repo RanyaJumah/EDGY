@@ -2,7 +2,7 @@
 
 ## Introduction
 ```
-This repo provides the code for this paper "Privacy-preserving Voice Analysis via Disentangled Representations"
+This repo provides the code for "Privacy-preserving Voice Analysis via Disentangled Representations" paper.
 ```
 ![GitHub Logo](/images/Potential_Attacks.png)
 
