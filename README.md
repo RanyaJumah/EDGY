@@ -22,18 +22,19 @@ Details under **Training Folder**
 
 ## Usage
 To generate different output, first specify the following options:
-* Privacy_preference = [Low, Moderate, High]
-* Output_type = [Recording, Embedding]
+* privacy_preference = [Low, Moderate, High]
+* output_type = [Recording, Embedding]
 
 Then, 
 * raw_dir: path to raw wavs files
 * generated_dir: path to generated wavs files
 * checkpoint: path to checkpoint model
-* synthesis_list: JSON file contains list of (path to raw wav, target/same speaker, generated file name)
+* filtring_list: JSON file contains list of (path to raw wav, target/same speaker, generated file name)
 
 Example:
 ```
-python DDF.py Privacy_preference=[?] Output_type=[?] checkpoint=[?] raw_dir=[?] generated_dir=[?] synthesis_list=[?] dataset=[LibriSpeech]
+python DDF.py privacy_preference=[?] output_type=[?] checkpoint=[?] 
+              raw_dir=[?] generated_dir=[?] filtring_list=[?] dataset=[LibriSpeech]
 ```
 ## Cite
 ```
