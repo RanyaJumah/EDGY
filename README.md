@@ -18,7 +18,7 @@ In this paper, we focus on attribute inference attacks in the speech domain, As 
 
 ## Requirements
 * Ensure you have Python 3 and PyTorch 1.4 or greater
-* Install ![NVIDIA/apex](https://github.com/NVIDIA/apex) for mixed precision training 
+* Install [NVIDIA/apex](https://github.com/NVIDIA/apex) for mixed precision training 
 * Install all package dependencies 
 
 
