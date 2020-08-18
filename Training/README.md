@@ -14,12 +14,12 @@ pip3 install requirements.txt
 
 * Train VQ-VAE model
 ```
-python train.py checkpoint_dir=path/to/checkpoint_dir dataset=../...
+python train_VQ.py checkpoint_dir=[?] dataset=[LibriSpeech]
 ```
 
 * Train Speaker model
 ```
-pip3 install requirements.txt
+python train_speaker.py checkpoint_dir=[?] dataset=[LibriSpeech]
 ```
 
 ## References
