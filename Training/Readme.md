@@ -3,7 +3,7 @@
 ## Dependencies
 * Install pip dependencies:
 ```
-pip install requirements.txt
+pip3 install requirements.txt
 ```
 
 
