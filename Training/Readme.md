@@ -8,10 +8,10 @@ pip3 install requirements.txt
 
 
 ## Data and Preprocessing
-* Train VQ-VAE model
-* Train 
+
 
 ## Training
-
+* Train VQ-VAE model
+* Train Speaker model
 
 
