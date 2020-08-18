@@ -27,7 +27,7 @@ Hello
 
 ## Train 
 ```
-Refer to [GitHub](http://github.com)
+Details under ** Training Folder **
 ```
 
 ## Usage
