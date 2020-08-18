@@ -2,14 +2,14 @@
 
 Introduction
 ```
-This repo provides the code for the paper "Privacy-preserving Voice Analysis via Disentangled Representations"
+Voice User Interfaces (VUIs) are increasingly popular and built into smartphones, home assistants, and Internet of Things (IoT) devices. Despite offering an always-on convenient user experience, VUIs raise new security and privacy concerns for their users. In this paper, we focus on attribute inference attacks in the speech domain, as shown in the figure below, demonstrating the potential for an attacker to accurately infer a target user's sensitive and private attributes (e.g. their emotion, sex, or health status) from deep acoustic models. To defend against this class of attacks, we design, implement, and evaluate a user-configurable, privacy-aware framework for optimizing speech-related data sharing mechanisms. This repo provides the code for this paper "Privacy-preserving Voice Analysis via Disentangled Representations"
 ```
 ![GitHub Logo](/images/Potential_Attacks.png)
 
 
 ## Table of Contents
 ```
-* Item 1
+* Training
 * Item 2
   * Item 2a
   * Item 2b
@@ -20,12 +20,7 @@ This repo provides the code for the paper "Privacy-preserving Voice Analysis via
 Hello
 ```
 
-## Download Dataset
-```
-Hello
-```
-
-## Train 
+## Download Dataset and Training
 ```
 Details under **Training Folder**
 ```
