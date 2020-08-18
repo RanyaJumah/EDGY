@@ -1,0 +1,5 @@
+defaults:
+    - dataset: libriSpeech
+    - preprocessing: default
+
+in_dir: ???
