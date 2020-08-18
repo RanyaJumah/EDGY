@@ -1,19 +1,19 @@
 # EDGY
 
-##Introduction
+Introduction
 
-##Table of Contents
+Table of Contents
 
-##Requirements
+Requirements
 
-##Download Dataset
+Download Dataset
 
-##Train 
+Train 
 
-##Usage
+Usage
 
-##Cite
+Cite
 
-##Contributing
+Contributing
 
 This project welcomes contributions and suggestions. Please contact ra6018@imperial.ac.uk with any additional questions or comments.
