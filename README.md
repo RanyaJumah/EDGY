@@ -27,7 +27,7 @@ Hello
 
 ## Train 
 ```
-Hello
+Refer to [GitHub](http://github.com)
 ```
 
 ## Usage
