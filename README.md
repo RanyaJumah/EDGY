@@ -9,14 +9,6 @@ In this paper, we focus on attribute inference attacks in the speech domain, As 
 ![GitHub Logo](/images/Potential_Attacks.png)
 
 
-## Table of Contents
-```
-* Training
-* Item 2
-  * Item 2a
-  * Item 2b
-```
-
 ## Requirements
 * Ensure you have Python 3 and PyTorch 1.4 or greater
 * Install [NVIDIA/apex](https://github.com/NVIDIA/apex) for mixed precision training 
@@ -30,7 +22,13 @@ Details under **Training Folder**
 
 ## Usage
 ```
-Hello
+python DDF.py checkpoint=path/to/checkpoint in_dir=path/to/wavs out_dir=path/to/out_dir synthesis_list=path/to/synthesis_list dataset=[???]
+
+To generate different output:
+
+Privacy_preference = [Low, Moderate, High]
+Output_type = [Recording, Embedding]
+
 ```
 
 ## Cite
