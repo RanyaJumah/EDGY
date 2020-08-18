@@ -1,11 +1,6 @@
-## VoxCeleb trainer
+## Speaker Embedding
 
-This repository contains the training code for 'In defence of metric learning for speaker recognition.'
-
-#### Dependencies
-```
-pip install -r requirements.txt
-```
+To train Speaker model, we use the following [repository](https://github.com/clovaai/voxceleb_trainer), then we use the trained model to extract the speaker embadding.
 
 #### Data preparation
 
@@ -92,38 +87,3 @@ test list for VoxCeleb1 from [here](http://www.robots.ox.ac.uk/~vgg/data/voxcele
 python ./trainSpeakerNet.py --model ResNetSE34L --trainfunc angleproto --batch_size 400 --nPerSpeaker 2 --train_list /home/joon/voxceleb/train_list.txt --test_list /home/joon/voxceleb/test_list.txt --train_path /home/joon/voxceleb/voxceleb2 --test_path /home/joon/voxceleb/voxceleb1
 ```
 
-#### Citation
-
-Please cite the following if you make use of the code.
-
-```
-@inproceedings{chung2020in,
-  title={In defence of metric learning for speaker recognition},
-  author={Chung, Joon Son and Huh, Jaesung and Mun, Seongkyu and Lee, Minjae and Heo, Hee Soo and Choe, Soyeon and Ham, Chiheon and Jung, Sunghwan and Lee, Bong-Jin and Han, Icksang},
-  booktitle={Interspeech},
-  year={2020}
-}
-```
-
-#### License
-```
-Copyright (c) 2020-present NAVER Corp.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-```
