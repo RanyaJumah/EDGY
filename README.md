@@ -37,7 +37,8 @@ Hello
 
 Contributing
 ```
-This project welcomes contributions and suggestions. Please contact ra6018@imperial.ac.uk with any additional questions or comments.
+This project welcomes contributions and suggestions. 
+Please contact ra6018@imperial.ac.uk with any additional questions or comments.
 ```
 
 
