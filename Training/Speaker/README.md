@@ -59,7 +59,7 @@ VGGVox40 (SAP, TAP, MAX)
 
 #### Data
 
-The [VoxCeleb](http://www.robots.ox.ac.uk/~vgg/data/voxceleb/) datasets are used for these experiments.
+The [VoxCeleb](http://www.robots.ox.ac.uk/~vgg/data/voxceleb/) datasets.
 
 The train list should contain the identity and the file path, one line per utterance, as follows:
 ```
@@ -69,21 +69,3 @@ id00012 id00012/21Uxsk56VDQ/00001.wav
 
 The train list for VoxCeleb2 can be download from [here](http://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/train_list.txt) and the
 test list for VoxCeleb1 from [here](http://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/veri_test.txt).
-
-#### Replicating the results from the paper
-
-1. Model definitions
-  - `VGG-M-40` in the paper is `VGGVox` in the code.
-  - `Thin ResNet-34` is in the paper `ResNetSE34` in the code.
-  - `Fast ResNet-34` is in the paper `ResNetSE34L` in the code.
-
-2. For metric learning objectives, the batch size in the paper is `nPerSpeaker` multiplied by `batch_size` in the code. For the batch size of 800 in the paper, use `--nPerSpeaker 2 --batch_size 400`, `--nPerSpeaker 3 --batch_size 266`, etc.
-
-3. The models have been trained with `--max_frames 200` and evaluated with `--max_frames 400`.
-
-4. You can get a good balance between speed and performance using the configuration below.
-
-```
-python ./trainSpeakerNet.py --model ResNetSE34L --trainfunc angleproto --batch_size 400 --nPerSpeaker 2 --train_list /home/joon/voxceleb/train_list.txt --test_list /home/joon/voxceleb/test_list.txt --train_path /home/joon/voxceleb/voxceleb2 --test_path /home/joon/voxceleb/voxceleb1
-```
-
