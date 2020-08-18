@@ -23,13 +23,11 @@ Details under **Training Folder**
 ## Usage
 ```
 python DDF.py checkpoint=path/to/checkpoint in_dir=path/to/wavs out_dir=path/to/out_dir synthesis_list=path/to/synthesis_list dataset=[???]
-
+```
 To generate different output:
 
 Privacy_preference = [Low, Moderate, High]
 Output_type = [Recording, Embedding]
-
-```
 
 ## Cite
 ```
