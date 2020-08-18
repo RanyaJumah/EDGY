@@ -27,7 +27,7 @@ Hello
 
 ## Train 
 ```
-Details under ** Training Folder **
+Details under **Training Folder**
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ If you find this work useful, please cite us.
 ## Contributing
 ```
 This project welcomes contributions and suggestions. 
-Please contact ** ra6018@imperial.ac.uk ** with any additional questions or comments.
+Please contact **ra6018@imperial.ac.uk** with any additional questions or comments.
 ```
 
 
