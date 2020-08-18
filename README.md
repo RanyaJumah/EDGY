@@ -1,6 +1,7 @@
 # EDGY
 ```
-This repo provides the code for "Privacy-preserving Voice Analysis via Disentangled Representations" paper.
+This repo provides the code for 
+"Privacy-preserving Voice Analysis via Disentangled Representations" paper.
 ```
 ## Introduction
 Voice User Interfaces (VUIs) are increasingly popular and built into smartphones, home assistants, and Internet of Things (IoT) devices. Despite offering an always-on convenient user experience, VUIs raise new security and privacy concerns for their users. 
