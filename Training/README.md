@@ -8,7 +8,7 @@ pip3 install requirements.txt
 
 
 ## Data and Preprocessing
-
+* [LibriSpeech](http://www.openslr.org/12) 
 
 ## Training
 
