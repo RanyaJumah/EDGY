@@ -22,8 +22,9 @@ Details under **Training Folder**
 
 ## Usage
 To generate different output:
-* Privacy_preference = [Low, Moderate, High],
+* Privacy_preference = [Low, Moderate, High]
 * Output_type = [Recording, Embedding]
+
 Example:
 ```
 python DDF.py Privacy_preference=[???] Output_type=[???] 
