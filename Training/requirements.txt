@@ -1,1 +1,10 @@
-
+numpy
+scipy
+scikit-learn
+torch
+torchaudio>=0.3.1
+librosa>=0.7
+tqdm
+hydra-core>=0.11
+pyloudnorm>=0.1.0
+tensorboard==2.2.1
