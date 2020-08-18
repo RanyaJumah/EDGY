@@ -1,2 +1,7 @@
-Privacy_preference: Low
-Output_type: Recording
+privacy_preference: Low
+output_type: Recording
+raw_dir: ?
+generated_dir: ?
+checkpoint: ?
+filtring_list: ?
+
