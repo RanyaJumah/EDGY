@@ -8,7 +8,12 @@ pip3 install requirements.txt
 
 
 ## Data and Preprocessing
-* [LibriSpeech](http://www.openslr.org/12) 
+1. Download [LibriSpeech](http://www.openslr.org/12) 
+2. Use train/test splits 
+3. Preprocess wav files and extract train/test log-Mel spectrograms:
+```
+python preprocess.py in_dir=[?] dataset=[LibriSpeech]
+```
 
 ## Training
 
