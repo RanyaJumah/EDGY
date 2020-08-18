@@ -51,7 +51,7 @@ def process_wav(wav_path, out_path, sr=160000, preemph=0.97, n_fft=2048, n_mels=
     return out_path, logmel.shape[-1]
 
 
-@hydra.main(config_path="config/preprocessing.yaml")
+@hydra.main(config_path="Configuration_files/Preprocessing/Mel.yaml")
 def preprocess_dataset(cfg):
     in_dir = Path(utils.to_absolute_path(cfg.in_dir))
     out_dir = Path(utils.to_absolute_path("datasets")) / str(cfg.dataset.dataset)
