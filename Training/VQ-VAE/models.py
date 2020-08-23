@@ -209,3 +209,8 @@ class Decoder(nn.Module):
         output = np.asarray(output, dtype=np.float64)
         output = mulaw_decode(output, self.quantization_channels)
         return output
+
+    def speaker(self, speaker):
+        speaker = self.speaker_embedding(speaker)
+                
+        return speaker
