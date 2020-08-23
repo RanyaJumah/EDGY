@@ -1,8 +1,8 @@
 defaults:
-    - dataset: LibriSpeech
-    - preprocessing: preprocessing
-    - model: model
-    - training: training
+    - Dataset: LibriSpeech
+    - Preprocessing: preprocessing
+    - Models: model
+    - Training: training
 
 resume: False
 checkpoint_dir: path/to/checkpoint_file
