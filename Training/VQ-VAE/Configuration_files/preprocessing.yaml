@@ -1,5 +1,5 @@
 defaults:
-    - dataset: libriSpeech
-    - preprocessing: default
+    - dataset: LibriSpeech
+    - preprocessing: preprocessing
 
-in_dir: ???
+in_dir: path/to/raw_wav_files
