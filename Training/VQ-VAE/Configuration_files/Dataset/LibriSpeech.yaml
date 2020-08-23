@@ -1,0 +1,5 @@
+dataset:
+  dataset: ?
+  language: ?
+  path: LibriSpeech
+  n_speakers: number_of_speaker
