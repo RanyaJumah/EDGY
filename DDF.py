@@ -66,7 +66,7 @@ def DDF(cfg):
          
     #---------------------------------------
     if cfg.privacy_preference == "Moderate":
-      dataset_path = Path(utils.to_absolute_path("Training/datasets")) / cfg.dataset.path
+      dataset_path = Path(utils.to_absolute_path("Training/Datasets")) / cfg.dataset.path
       with open(dataset_path / "speakers.json") as file:
            speakers = sorted(json.load(file))          
           
@@ -112,7 +112,7 @@ def DDF(cfg):
          
     #---------------------------------------
     if cfg.privacy_preference == "High":
-      dataset_path = Path(utils.to_absolute_path("Training/datasets")) / cfg.dataset.path
+      dataset_path = Path(utils.to_absolute_path("Training/Datasets")) / cfg.dataset.path
       with open(dataset_path / "speakers.json") as file:
            speakers = sorted(json.load(file))          
                 
