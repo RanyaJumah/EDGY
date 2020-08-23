@@ -1,7 +1,7 @@
 defaults:
-    - dataset: LibriSpeech
-    - preprocessing: preprocessing
-    - model: model
+    - Dataset: LibriSpeech
+    - Preprocessing: preprocessing
+    - Models: model
 
 filter_list: path/to/filter_list.json_file
 raw_dir: path/to/raw_wav_files/under/Training/datasets/LibriSpeech
