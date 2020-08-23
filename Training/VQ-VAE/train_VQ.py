@@ -29,7 +29,7 @@ def save_checkpoint(encoder, decoder, optimizer, amp, scheduler, step, checkpoin
     print("Saved checkpoint: {}".format(checkpoint_path.stem))
 
 
-@hydra.main(config_path="config/train.yaml")
+@hydra.main(config_path="Training/VQ-VAE/Configuration_files/training.yaml")
 def train_model(cfg):
     tensorboard_path = Path(utils.to_absolute_path("tensorboard")) / cfg.checkpoint_dir
     checkpoint_dir = Path(utils.to_absolute_path(cfg.checkpoint_dir))
