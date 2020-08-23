@@ -3,14 +3,12 @@ from hydra import utils
 from itertools import chain
 from pathlib import Path
 from tqdm import tqdm
-
 import apex.amp as amp
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
-
 from dataset import SpeechDataset
 from models import Encoder, Decoder
 
