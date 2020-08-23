@@ -11,7 +11,7 @@ from preprocess import preemphasis
 from model import Encoder, Decoder
 
 
-@hydra.main(config_path="config/DDF.yaml")
+@hydra.main(config_path="Training/VQ-VAE/Configuration_files/DDF.yaml")
 def DDF(cfg):
 
     filter_list_path = Path(utils.to_absolute_path(cfg.filter_list))
