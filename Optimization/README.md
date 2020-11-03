@@ -78,4 +78,4 @@ comp_ctrl, compressed_model = create_compressed_model(model, nncf_config)
 ```
 <br />
 
-** Note:[for more detailes](https://github.com/openvinotoolkit/nncf/blob/develop/docs/Usage.md).
+** For more details please refer to[NNCF](https://github.com/openvinotoolkit/nncf/blob/develop/docs/Usage.md).
