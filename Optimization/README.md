@@ -77,4 +77,5 @@ comp_ctrl, compressed_model = create_compressed_model(model, nncf_config)
           compression_ctrl.scheduler.epoch_step()
 ```
 <br />
-** Note: [for more detailes](https://github.com/openvinotoolkit/nncf/blob/develop/docs/Usage.md), this is a step-by-step tutorial on how to integrate it.
+
+** Note:[for more detailes](https://github.com/openvinotoolkit/nncf/blob/develop/docs/Usage.md).
