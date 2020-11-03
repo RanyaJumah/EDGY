@@ -10,7 +10,7 @@ Inference efficiency is a significant challenge when deploying DL models at the 
 ## Optimization Tools
 * Automatic Mixed Precision [AMP](https://nvidia.github.io/apex/amp.html), a PyTorch extension with NVIDIA-maintained utilities to streamline mixed precision and distributed training. 
 * Neural Network Compression Framework [NNCF](https://github.com/openvinotoolkit/nncf), a framework for neural network compression with fine-tuning built on the top of PyTorch framework, to experiment with different compression techniques. It supports various compression algorithms including quantization, pruning, and sparsity applied during the model fine-tuning process to achieve better compression parameters and accuracy. 
-
+****Note: you only need to add them to your training script
 
 ## Implementation
 We elaborate in the following:
@@ -24,7 +24,7 @@ and quantization, to enable private, accurate and efficient representation learn
 * (2) Pruning and Sparsity (using NNCF).
 * (3) Quantization (using NNCF).
 The overall compression procedures (i.e., Pruning and Quantization) can be summarized as: loading a JSON configuration script which contains NNCF-specific parameters determining the compression to be applied to the model, and then passing the FP model along with the configuration script to the "nncf.create\_compressed\_model" function. This function returns a wrapped model ready for compression and fine-tuning, and an additional object to allow further control of the compression during the fine-tuning process, as shown in the Figure. Fine-tuning is a necessary step in some cases to recover the ability to generalize that may have been damaged by the model optimization techniques. 
-![GitHub Logo](/images/ModelOptimization_Pipeline.png){width: 70%;}
+![GitHub Logo](/images/ModelOptimization_Pipeline.png)
 ```
 We evaluate EDGY's on-device performance, and explore optimization techniques, including model pruning 
 and quantization, to enable private, accurate and efficient representation learning on resource-constrained devices.
