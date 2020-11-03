@@ -9,8 +9,8 @@ Inference efficiency is a significant challenge when deploying DL models at the 
 
 ## Optimization Tools
 * Automatic Mixed Precision [AMP](https://nvidia.github.io/apex/amp.html), a PyTorch extension with NVIDIA-maintained utilities to streamline mixed precision and distributed training. 
-* Neural Network Compression Framework [NNCF](https://github.com/openvinotoolkit/nncf), a framework for neural network compression with fine-tuning built on the top of PyTorch framework, to experiment with different compression techniques. It supports various compression algorithms including quantization, pruning, and sparsity applied during the model fine-tuning process to achieve better compression parameters and accuracy. 
-****Note: you only need to add them to your training script
+* Neural Network Compression Framework [NNCF](https://github.com/openvinotoolkit/nncf), a framework for neural network compression with fine-tuning built on the top of PyTorch framework, to experiment with different compression techniques. It supports various compression algorithms including quantization, pruning, and sparsity applied during the model fine-tuning process to achieve better compression parameters and accuracy. <br />
+**Note: you only need to add them to your training script
 
 ## Implementation
 We elaborate in the following:
