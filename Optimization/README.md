@@ -15,11 +15,29 @@ Inference efficiency is a significant challenge when deploying DL models at the 
 ## Implementation
 We elaborate in the following:
 * (1) Low-precision Training (AMP).<br />
-Apex offers four optimization levels, as follows: O0 (pure FP32 training), O1 (Conservative Mixed Precision), O2 (Fast Mixed Precision), and O3 (FP16 training). We initialize our model with "amp.initialize" and set the optimization level flag to O1. In the optimization level O1, it uses dynamic loss scaling, and all Torch functions and Tensor methods cast their inputs according to a whitelist-blacklist model. The whitelist operations (i.e., Tensor Core-friendly ones, like convolutions) are performed in FP16, while the blacklist operations that benefit from FP32 precision (e.g., softmax) are performed in FP32.  
+Apex offers four optimization levels, as follows: O0 (pure FP32 training), O1 (Conservative Mixed Precision), O2 (Fast Mixed Precision), and O3 (FP16 training). Initialize your model with "amp.initialize" and set the optimization level flag to O1. In the optimization level O1, it uses dynamic loss scaling, and all Torch functions and Tensor methods cast their inputs according to a whitelist-blacklist model. The whitelist operations (i.e., Tensor Core-friendly ones, like convolutions) are performed in FP16, while the blacklist operations that benefit from FP32 precision (e.g., softmax) are performed in FP32. The following three lines need to be added to the main training script:
 
 ```
-We evaluate EDGY's on-device performance, and explore optimization techniques, including model pruning 
-and quantization, to enable private, accurate and efficient representation learning on resource-constrained devices.
+# Initialization
+opt_level = 'O1'
+[encoder, decoder], optimizer = amp.initialize([encoder, decoder], optimizer, opt_level=opt_level)
+
+# Train your model
+...
+with amp.scale_loss(loss, optimizer) as scaled_loss:
+    scaled_loss.backward()
+...
+
+# Save checkpoint
+checkpoint_state = {
+        "encoder": encoder.state_dict(),
+        "decoder": decoder.state_dict(),
+        "optimizer": optimizer.state_dict(),
+        "amp": amp.state_dict(),
+        "scheduler": scheduler.state_dict(),
+        "step": step}
+torch.save(checkpoint_state, checkpoint_path)
+...
 ```
 * (2) Pruning and Sparsity (NNCF).<br />
 * (3) Quantization (NNCF).<br />
