@@ -24,7 +24,7 @@ and quantization, to enable private, accurate and efficient representation learn
 * (2) Pruning and Sparsity (using NNCF).
 * (3) Quantization (using NNCF).
 The overall compression procedures (i.e., Pruning and Quantization) can be summarized as: loading a JSON configuration script which contains NNCF-specific parameters determining the compression to be applied to the model, and then passing the FP model along with the configuration script to the "nncf.create\_compressed\_model" function. This function returns a wrapped model ready for compression and fine-tuning, and an additional object to allow further control of the compression during the fine-tuning process, as shown in the Figure. Fine-tuning is a necessary step in some cases to recover the ability to generalize that may have been damaged by the model optimization techniques. 
-![GitHub Logo](/images/ModelOptimization_Pipeline.png =250x250)
+![GitHub Logo](/images/ModelOptimization_Pipeline.png){width: 70%;}
 ```
 We evaluate EDGY's on-device performance, and explore optimization techniques, including model pruning 
 and quantization, to enable private, accurate and efficient representation learning on resource-constrained devices.
