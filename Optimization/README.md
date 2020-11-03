@@ -53,7 +53,7 @@ You can find diffrent configration files examples in JSON_configration folder to
 
 # Step 2: Add the imports required for NNCF
 import torch
-import nncf  # Important - should be imported directly after torch
+import nncf  
 from nncf import create_compressed_model, NNCFConfig, register_default_init_args
 
 # Step 3: Load the NNCF JSON configuration file that you prepared during Step 1
@@ -62,7 +62,7 @@ nncf_config = NNCFConfig.from_json("nncf_config.json")
 # Step 4: Provide data loaders for compression algorithm initialization, if necessary (i.e., Quantization Implementation)
 nncf_config = register_default_init_args(nncf_config, train_loader, loss_criterion)
 
-# Step 5: # Apply the specified compression algorithms to the model
+# Step 5: Apply the specified compression algorithms to the model
 comp_ctrl, compressed_model = create_compressed_model(model, nncf_config)
 
 # Step 6: In the training loop, 
@@ -77,4 +77,4 @@ comp_ctrl, compressed_model = create_compressed_model(model, nncf_config)
           compression_ctrl.scheduler.epoch_step()
 ```
 <br />
-** Note: ![for more detailes](https://github.com/openvinotoolkit/nncf/blob/develop/docs/Usage.md), this is a step-by-step tutorial on how to integrate it.
+** Note: [for more detailes](https://github.com/openvinotoolkit/nncf/blob/develop/docs/Usage.md), this is a step-by-step tutorial on how to integrate it.
