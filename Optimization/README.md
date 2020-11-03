@@ -46,6 +46,7 @@ torch.save(checkpoint_state, checkpoint_path)
 The overall compression procedures (i.e., Pruning and Quantization) can be summarized as: loading a JSON configuration script which contains NNCF-specific parameters determining the compression to be applied to the model, and then passing the FP model along with the configuration script to the "nncf.create\_compressed\_model" function. This function returns a wrapped model ready for compression and fine-tuning, and an additional object to allow further control of the compression during the fine-tuning process, as shown in the Figure. Fine-tuning is a necessary step in some cases to recover the ability to generalize that may have been damaged by the model optimization techniques. 
 ![GitHub Logo](/images/ModelOptimization_Pipeline.png)
 <br />
+
 ```
 # Step 1: Create an NNCF configuration file
 You can find diffrent configration files examples in JSON_configration folder to setup the parameters of compression to be applied to your model.
