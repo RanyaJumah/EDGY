@@ -13,6 +13,6 @@ We elaborate in the following:
 
 We use the Neural Network Compression Framework [NNCF](https://github.com/openvinotoolkit/nncf), a framework for neural network compression with fine-tuning built on the top of PyTorch framework, to experiment with different compression techniques. 
 It supports various compression algorithms including quantization, pruning, and sparsity applied during the model fine-tuning process to achieve better compression parameters and accuracy. 
-![GitHub Logo](/EDGY/Optimization/ModelOptimization_Pipeline.pdf)
+![GitHub Logo](/ModelOptimization_Pipeline.pdf)
 The overall compression procedures can be summarized as: loading a JSON configuration script which contains NNCF-specific parameters determining the compression to be applied to the model, and then passing the FP model along with the configuration script to the "nncf.create\_compressed\_model" function. This function returns a wrapped model ready for compression and fine-tuning, and an additional object to allow further control of the compression during the fine-tuning process, as in Figure. Fine-tuning is a necessary step in some cases to recover the ability to generalize that may have been damaged by the model optimization techniques. 
 
