@@ -36,6 +36,11 @@ Example:
 python DDF.py privacy_preference=[?] output_type=[?] checkpoint=[?] 
               raw_dir=[?] generated_dir=[?] filtring_list=[?] dataset=[LibriSpeech]
 ```
+## Edge Optimization
+```
+Details under **Optimization Folder**
+```
+
 ## Cite
 ```
 If you find this work useful, please cite us.
