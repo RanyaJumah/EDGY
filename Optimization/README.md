@@ -65,14 +65,14 @@ nncf_config = register_default_init_args(nncf_config, train_loader, loss_criteri
 comp_ctrl, compressed_model = create_compressed_model(model, nncf_config)
 
 # Step 6: In the training loop, 
-          * After inferring the model, take a compression loss and add it (using the + operator) to the common loss, 
+          # After inferring the model, take a compression loss and add it (using the + operator) to the common loss, 
           compression_loss = compression_ctrl.loss()
           loss = common_loss + compression_loss
           
-          * Call the scheduler step() after each training iteration:
+          # Call the scheduler step() after each training iteration:
           compression_ctrl.scheduler.step()
           
-          * Call the scheduler epoch_step() after each training epoch:
+          # Call the scheduler epoch_step() after each training epoch:
           compression_ctrl.scheduler.epoch_step()
 ```
 <br />
