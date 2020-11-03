@@ -1,0 +1,25 @@
+{
+       "input_info":
+                    [ 
+                    {
+                        "sample_size": [1,80,100],  
+                        "type":"int64",
+                        "filler": "zeros" 
+                    }
+                    ],
+
+
+   "compression":
+{
+    "algorithm": "quantization",
+    "initializer": 
+    {
+            "range": 
+                   {
+                "num_init_steps": 5
+                   }
+    },
+    
+}
+                    
+}
