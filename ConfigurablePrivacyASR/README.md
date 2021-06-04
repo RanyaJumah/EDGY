@@ -18,4 +18,4 @@ This repo provides the code for
 - [ZeroSpeech Challenge 2021](https://github.com/bootphon/zerospeech2021_baseline)
 - [TRILL](https://github.com/google-research/google-research/tree/master/non_semantic_speech_benchmark)
 
-*** Note: these instructions are a work in progress and will be updated over the next few days
+*** Note: these instructions will be updated over the next few days
