@@ -3,12 +3,12 @@ This repo provides the code for
 "Configurable Privacy-Preserving Automatic Speech Recognition" paper.
 ```
 Our pipeline consists of three basic components: Separation, ASR, and Discretization.
-- Speech Separation (SEP):
+- Speech Separation (SEP),
 Generating a set of non-overlapped speech signals from an audio signal with overlapped utterances by a varying degree.
-- Speech Recognition (ASR):
+- Speech Recognition (ASR),
 Speech to text conversion is the process of converting spoken words into written texts.
-- Speech Discretization (DIS):
-Discovering discrete units (e.g. phonemes) of the speech signal in a highly compact format while being invariant to speaker-specific and background noise.
+- Speech Discretization (DIS),
+Discovering discrete units (e.g. phonemes) of the speech signal while being invariant to speaker-specific and background noise.
 
 
 ## Requirements
